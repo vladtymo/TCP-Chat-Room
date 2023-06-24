@@ -18,6 +18,8 @@ namespace SharedLibrary
         public RequestCommand Command { get; set; }
         public string Message { get; set; }
 
+        // .. additional properties ..
+
         public ClientCommand() { }
         public ClientCommand(RequestCommand cmd)
         {

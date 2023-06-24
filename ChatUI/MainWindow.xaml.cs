@@ -70,7 +70,7 @@ namespace ChatUI
             BinaryFormatter formatter = new BinaryFormatter();
             formatter.Serialize(ns, req);
             //await JsonSerializer.SerializeAsync(ns, req);
-            ns.Flush();
+            ns.Flush(); // clear buffer and send all data
 
             MessageBox.Show("Send to Server!");
         }
